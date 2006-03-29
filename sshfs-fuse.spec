@@ -7,7 +7,6 @@ License:	GPL v2
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/fuse/%{name}-%{version}.tar.gz
 # Source0-md5:	04fa75c1357bea362537efe15805e7da
-Patch0:		%{name}-fPIC.patch
 URL:		http://fuse.sourceforge.net/
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	libfuse-devel >= 0:2.5
@@ -22,7 +21,6 @@ System plików oparty na protokole SSH File Transfer Protocol.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %configure
