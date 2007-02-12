@@ -1,5 +1,5 @@
 Summary:	Filesystem based on the SSH File Transfer Protocol
-Summary(pl.UTF-8):   System plików oparty na protokole SSH File Transfer Protocol
+Summary(pl.UTF-8):	System plików oparty na protokole SSH File Transfer Protocol
 Name:		sshfs-fuse
 Version:	1.7
 Release:	1
