@@ -7,7 +7,7 @@ License:	GPL v2
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/fuse/%{name}-%{version}.tar.gz
 # Source0-md5:	3c575cf89a6d3d8ab6063c2f60bd5b25
-URL:		http://fuse.sourceforge.net/
+URL:		http://fuse.sourceforge.net/sshfs.html
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	libfuse-devel >= 0:2.5
 BuildRequires:	pkgconfig
