@@ -1,12 +1,12 @@
 Summary:	Filesystem based on the SSH File Transfer Protocol
 Summary(pl.UTF-8):	System plików oparty na protokole SSH File Transfer Protocol
 Name:		sshfs-fuse
-Version:	2.3
+Version:	2.4
 Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://downloads.sourceforge.net/fuse/%{name}-%{version}.tar.gz
-# Source0-md5:	f72f12fda186dbd92382f70d25662ed3
+# Source0-md5:	3c7c3647c52ce84d09486f1da3a3ce24
 URL:		http://fuse.sourceforge.net/sshfs.html
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	libfuse-devel >= 0:2.6
