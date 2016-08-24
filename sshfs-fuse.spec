@@ -5,7 +5,8 @@ Version:	2.8
 Release:	1
 License:	GPL v2
 Group:		Applications/System
-Source0:	http://github.com/libfuse/sshfs/releases/download/sshfs_%{version}/sshfs-%{version}.tar.gz
+#Source0Download: https://github.com/libfuse/sshfs/releases
+Source0:	https://github.com/libfuse/sshfs/releases/download/sshfs_%{version}/sshfs-%{version}.tar.gz
 # Source0-md5:	0ba25e848ee59e2595d6576c8f6284b6
 URL:		https://github.com/libfuse/sshfs
 BuildRequires:	glib2-devel >= 2.0
