@@ -13,6 +13,7 @@ BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	libfuse3-devel >= 3.1.0
 BuildRequires:	meson
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(macros) >= 1.727
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
