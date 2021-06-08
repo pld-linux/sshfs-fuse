@@ -13,8 +13,9 @@ BuildRequires:	docutils
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	libfuse3-devel >= 3.1.0
 BuildRequires:	meson >= 0.40
+BuildRequires:	ninja
 BuildRequires:	pkgconfig
-BuildRequires:	rpmbuild(macros) >= 1.727
+BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	libfuse3-tools >= 3.1.0
@@ -32,12 +33,12 @@ System plików oparty na protokole SSH File Transfer Protocol.
 %build
 %meson build
 
-%meson_build -C build
+%ninja_build -C build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%meson_install -C build
+%ninja_install -C build
 
 %clean
 rm -rf $RPM_BUILD_ROOT
