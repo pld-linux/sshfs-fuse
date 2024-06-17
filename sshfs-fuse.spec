@@ -2,12 +2,14 @@ Summary:	Filesystem based on the SSH File Transfer Protocol
 Summary(pl.UTF-8):	System plików oparty na protokole SSH File Transfer Protocol
 Name:		sshfs-fuse
 Version:	3.7.3
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/System
 #Source0Download: https://github.com/libfuse/sshfs/releases
 Source0:	https://github.com/libfuse/sshfs/releases/download/sshfs-%{version}/sshfs-%{version}.tar.xz
 # Source0-md5:	f704f0d1800bdb5214030a1603e8c6d6
+Patch0:		readlink-memleak.patch
+Patch1:		stat-in-cached-readdir.patch
 URL:		https://github.com/libfuse/sshfs
 BuildRequires:	docutils
 BuildRequires:	glib2-devel >= 2.0
@@ -29,6 +31,8 @@ System plików oparty na protokole SSH File Transfer Protocol.
 
 %prep
 %setup -q -n sshfs-%{version}
+%patch0 -p1
+%patch1 -p1
 
 %build
 %meson build
