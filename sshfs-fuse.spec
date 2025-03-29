@@ -31,8 +31,8 @@ System plików oparty na protokole SSH File Transfer Protocol.
 
 %prep
 %setup -q -n sshfs-%{version}
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 %meson build
