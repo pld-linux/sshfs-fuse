@@ -17,7 +17,7 @@ BuildRequires:	libfuse3-devel >= 3.1.0
 BuildRequires:	meson >= 0.40
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	libfuse3-tools >= 3.1.0
@@ -35,14 +35,14 @@ System plików oparty na protokole SSH File Transfer Protocol.
 %patch -P1 -p1
 
 %build
-%meson build
+%meson
 
-%ninja_build -C build
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%ninja_install -C build
+%meson_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
